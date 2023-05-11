@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_document"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/document"
+            android:layout_marginRight="16dp">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/img_pay"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/pay"
+            android:layout_marginRight="16dp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_dueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Company">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:text=""
+                android:ellipsize="end"
+                android:maxLines="2">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
